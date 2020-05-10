@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/1e08dcf06d.js" crossorigin="anonymous"></script>
+
+<style>
+
+    html, body {
+        height: 100%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body{
+        background-color:rgb(167, 133, 89)
+    }
+
+    .box {
+        background-color:rgb(209, 181, 148);
+        justify-content: center;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        border: 3px solid black
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%
+    }
+
+    .box-flex{
+        display: block;
+        flex-direction: row;
+        max-width: 50%;
+        min-height: 10px;
+        padding-bottom: 20px;
+    }
+
+    button {
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        background: rgb(72, 201, 201);
+        border: 3px solid green;
+        font-size: 20px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: grey;
+        border: 3px solid black;
+    }
+
+    .quote{
+        display: block;
+        font-size: 40px;
+        text-align: left;
+        margin-top: 20px;
+        
+    }
+
+    #quote_text{
+        display:inline;
+        font-size: 20px;
+        padding-bottom: 200px;
+    }
+
+    #quote_author{
+        display: block;
+        text-align: right;
+        font-size: 20px;
+    }
+
+
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box-flex">
+            <button onclick="selectQuote()">Generate Quote</button>
+            <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p id="quote_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non lorem vel purus aliquet blandit.</p>
+                <p id="quote_author">- Latin</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="quotes_generator.js"></script>
+</body>
+</html>
